@@ -15,13 +15,14 @@
 .upper-canvas{
   /* border: solid; */
   width: 90vw;
-  min-height: 75vh;
+  max-height: 90vh;
   margin: auto;
   background-color: aqua;
 }
 .canvas{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 45vh;
 }
 .ground {
   width: 90vw;
@@ -34,6 +35,50 @@
 
 }
 
+.box1 {
+  border-right: white solid 10px ;
+  border-bottom: white solid 15px;
+}
+.box2 {
+  border-right: white solid 10px ;
+  border-left: white solid 10px ;
+  border-bottom: white solid 15px ;
+}
+.box3 {
+  border-left: white solid 10px ;
+  border-bottom: white solid 15px ;
+}
+.box4 {
+  /* border-right: white solid 10px ; */
+  grid-column: span 3;
+  justify-self: center
+}
+
+.flex-canvas{
+  display: flex;
+}
+
+.triangle1{
+  width: 0;
+  height: 0;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 200px solid lightgreen;
+  position: fixed;
+  right: 55px;
+  top: 195px; 
+  
+}
+.triangle2{
+  width: 0;
+  height: 0;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 265px solid green;
+  position: fixed;
+  right: 250px;
+  top: 130px
+}
 /* flexbox */
 /* 
 .circle1 {
