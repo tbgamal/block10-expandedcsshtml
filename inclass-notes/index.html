@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Block 10: Expanded CSS and HTML</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 
+    ==== NOTES ====
+    
+    1. HTML Forms
+
+      User inputs information
+      Info sent to a server
+      Example: contact us form, sign up form, job application, comments section
+
+      Input types can provide you with data validation. E.g. email address when there's no @ sign and the user asked/notified of an error
+        Other expample: Numerical value, date, checkbox, radio button, drop down menu
+        You can go to HTML Elements -> <input> in MDN, you can find different types of input  
+  -->
+
+  <h1>Block 10 Demo</h1>
+  <h2>Form Example</h2>
+  
+  <form action="submit.html">
+    <label for="name">Name: </label>
+    <input type="text" id="name" placeholder="John Smith" required />
+    <label for="phone">Phone number:</label>
+    <input type="number" id="phone">
+    <div class="form-item">
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
+    </div>
+    
+    <label for="country">Country: </label>
+    <select name="" id="country">
+      <option value="" disabled selected hidden>choose a country</option>
+      <!-- 
+        selected  : will be the default option in the dropdown
+        disabled  : will make the option not seen and cannot be choosen
+        hidden    : option is there but cannot be clicked        
+      -->
+      <option value="ca">Canada</option>
+      <option value="mx">Mexico</option>
+      <option value="us">United States</option>
+    </select>
+
+    <button type="submit" id="submit-btn">Submit</button>
+  </form>
+
+  <!-- 
+    ==== NOTES ====
+
+    Form Submissions
+      Actions : Where do we send/redirect the user to after submission?
+      Targets : to specify if the user will go to a new tab/window/replace current page
+      Methods : how we're gonna submit the data? (to be discussed in future classes)
+   -->
+
+   <div class="grid-container-example">
+    <div class="block1">Header Block</div>
+    <div class="block2">Menu Block</div>
+    <div class="block3">Main Block</div>
+   </div>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+/* 
+
+==== NOTES ====
+
+Flexbox vs Grid
+
+  Flexbox will allow us to 
+*/
+
+/* GRID EXAMPLE */
+
+.grid-container-example{
+  display: grid;
+  grid-template-areas: 
+    'header_block header_block header_block header_block header_block'
+    'menu_block main_block main_block main_block main_block right_block right_block';
+}
+/* 
+form {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 10px;
+}
+
+#submit-btn{
+  grid-column: span 2;
+  width: 100px;
+  justify-self: center;
+} */
+
+form {
+  display:flex;
+  flex-wrap: wrap;
+
+}
+
+.form-item {
+  background-color: lightyellow;
+  padding: 25px;
+}
+
+input{
+  background-color: lightgreen;
+}
+
+form label:nth-child(odd) {
+  color:crimson;
+}
+
+button:hover {
+  background-color: green;
+}
+
+body {
+  font-size: calc(16px + 0.5vw);
+}
+/* 
+
+CSS Debugging tips
+  Comment out rules one at a time
+
+*/
+
+/* 
+  Styling libraries: refer to the slide for some references!
+*/
